@@ -1,0 +1,104 @@
+.listPage {
+    margin: 0 auto;
+    padding: 24px 16px;
+    max-width: 800px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.search {
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #bbbbbb;
+    flex: 1 1 240px;
+}
+
+.sortLabel {
+    display: flex;
+    flex-direction: column;
+    color: #555555;
+    font-size: 14px;
+    gap: 4px;
+}
+
+.item {
+    background: white;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #bbbbbb;
+    width: 125px;
+}
+
+.posterImage {
+    height: 96px;
+    width: 64px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.movieTitle {
+    font-size: 18px;
+    margin: 0 0 4px;
+}
+
+.releaseYear {
+    color: #666666;
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+
+.genreList {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 4px 8px;
+}
+
+.genre {
+    color: var(--navy);
+    font-size: 12px;
+}
+
+.genre + .genre::before {
+    content: "|";
+    margin-right: 8px;
+    color: var(--navy);
+}
+
+.movieList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 12px;
+}
+
+.movieItem {
+    display: flex;
+    background: white;
+    text-decoration: none;
+    gap: 16px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 12px;
+    transition: transform 0.15s;
+}
+
+.movieItem:hover {
+    border-color: var(--teal);
+    background: #e6f6f7;
+    transform: scale(1.05);
+}

@@ -1,0 +1,77 @@
+.detailPage {
+    margin: 0 auto;
+    padding: 24px 16px;
+    max-width: 900px;
+}
+
+.detailTitle {
+    margin: 0 0 16px;
+    font-size: 28px;
+}
+
+.detailContent {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.posterImage {
+    border-radius: 8px;
+    width: 280px;
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+.arrowBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.arrowBtn {
+    background: white;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--navy);
+    border-radius: 6px;
+}
+
+.arrowBtn:hover:not(:disabled) {
+    background: var(--navy);
+}
+
+.arrowBtn:disabled {
+    opacity: 0.35;
+}
+
+.arrowIcon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    transition: filter 0.15s;
+}
+
+.arrowBtn:hover:not(:disabled) .arrowIcon {
+    filter: brightness(0) invert(1);
+}
+
+/* References: 
+- https://stackoverflow.com/questions/14127318/css-for-dl-dt-and-dd-elements-so-that-they-appear-centered-and-lined-up-as-key
+- https://www.geeksforgeeks.org/reactjs/how-to-disable-a-button-in-reactjs/
+*/
+
+.info {
+    margin: 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 20px;
+}
+
+.info dd {
+    margin: 0;
+}
+
+.info dt {
+    color: var(--navy);
+    font-weight: 600;
+}
